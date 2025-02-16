@@ -9,7 +9,7 @@ for i in range(5) :
     odd.append(random.choice(range(1,100,2)))
 print("list of 5 odd intergers",odd)
 for i in range(4):
-    even.append(random.choice(range(1,100,1)))
+    even.append(random.choice(range(2,100,2)))
 print("List of 4 even numbers:",even) 
 odd[2]=even
 print("list after replacing 3th element of odd with even",odd)
