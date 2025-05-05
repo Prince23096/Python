@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Congratulations Dabhani Sanjay!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f0abfc, #a5f3fc, #c4b5fd);
+      background-size: 300% 300%;
+      animation: gradientBG 10s ease infinite;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    .card {
+      background: white;
+      margin-top: 50px;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 90%;
+      width: 700px;
+      animation: fade-in 1s ease;
+    }
+
+    @keyframes fade-in {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #6b21a8;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    .teacher {
+      color: #2563eb;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #7e22ce;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #9333ea;
+    }
+
+    .result-card {
+      margin-top: 30px;
+      display: none;
+      background: #f9f9fb;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      animation: fade-in 1s ease-in-out;
+    }
+
+    .result-card h2 {
+      margin-top: 0;
+      color: #0f172a;
+    }
+
+    .info {
+      font-size: 1em;
+      color: #475569;
+      margin: 5px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #e0f2fe;
+      color: #0c4a6e;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎉 Congratulations, Dabhani Sanjay! 🎉</h1>
+    <p>You have done an outstanding job by scoring over <strong>90%</strong> in your board exam.</p>
+    <p>Your dedication, effort, and discipline have made everyone proud — especially your teacher <span class="teacher">Maidkol's Teacher</span>.</p>
+    <button onclick="document.getElementById('resultCard').style.display='block'">📄 View Result</button>
+  </div>
+
+  <!-- Result Card -->
+  <div id="resultCard" class="result-card">
+    <h2>📘 Board Exam Result (2025)</h2>
+    <p class="info"><strong>Name:</strong> Dabhani Sanjaybhai Amaratbhai</p>
+    <p class="info"><strong>Seat No:</strong> B288922 | <strong>SID:</strong> 25V-125762</p>
+    <p class="info"><strong>Overall Percentile:</strong> 99.17 | <strong>Total Marks:</strong> 585 / 650 (A2)</p>
+
+    <table>
+      <tr>
+        <th>Subject</th><th>Marks</th><th>Grade</th>
+      </tr>
+      <tr><td>English (S.L.)</td><td>74 / 100</td><td>B1</td></tr>
+      <tr><td>Chemistry</td><td>95 / 100</td><td>A1</td></tr>
+      <tr><td>Chemistry Practical</td><td>47 / 50</td><td>A1</td></tr>
+      <tr><td>Physics</td><td>92 / 100</td><td>A1</td></tr>
+      <tr><td>Physics Practical</td><td>42 / 50</td><td>A2</td></tr>
+      <tr><td>Biology</td><td>98 / 100</td><td>A1</td></tr>
+      <tr><td>Biology Practical</td><td>46 / 50</td><td>A1</td></tr>
+      <tr><td>Sanskrit</td><td>91 / 100</td><td>A1</td></tr>
+    </table>
+  </div>
+
+</body>
+</html>
